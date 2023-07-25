@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/monogram.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W05M0JV0N"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+ 	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-7W05M0JV0N');
+	</script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
+	<title>Intuiblox</title>
+</head>
+<body>
+	<a class="skip" href="#main">Skip to Main Content</a>
+	<header>
+		<a href="index.html"><img src="images/logo.png" alt="Eva's logo: QC monogram" ></a>
+		<nav aria-label="webpage navigation bar">
+			<ul class="nav_links">
+				<li><a href = "index.html#project" aria-label="back to project list">UX Design</a></li>
+				<li><a href = "about.html" aria-label="about me page">About Me</a></li>
+				<li><a href = "contact.html" aria-label="contact me">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main">
+		<div class = "options">
+            <button  id = "play">Play Video</button>
+            <button  id = "pause">Pause Video</button>
+            <button  id = "slower">Slow Down</button>
+            <button  id = "faster">Speed Up</button>
+            <button  id = "skip">Skip Ahead</button>
+            <button  id="mute">Mute</button>
+        </div>
+
+        <figure>
+            <video class = "video"
+                autoplay="false"
+                id="player1"
+                preload="none"
+                src="images/intuiblox/export three.mp4" />
+
+                <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                      Your browser does not support HTML5 video.
+            </video>
+            <figcaption>[Video from class DESCI501]</figcaption>
+            </figure>
+        <script src="js/video.js"></script>
+
+
+		<h1>Intuiblox</h1>
+
+		<div class="overview eapp">
+			<h2>Overview</h2>
+			<p>Intuiblox is a set of children toy that grows with the children. They are made by EVA foam which is soft and durable. They are like huge logos. You can assemble it into many forms such as small table and chair sets, wagons, etc.  </p>
+		</div>
+
+		<div class="myrole">
+			<h2>Context</h2>
+			<p>DURATION: 2021/09 – 2021/12</p>
+			<br>
+			<p>SKILLS: Industrial Design, Survey Analysis</p>
+			<br>
+			<p>TOOLS: C4D, Survey Sawtooth</p>
+		</div>
+
+
+
+        <div class="bodylike">
+            <h3 class="kids">grow with kids.</h3>
+            <p class="kidscaption">[Cite: Children's image from modu toy's official website]</p>
+            <canvas id="hero-lightpass"></canvas>
+            <script src="js/scroll.js"></script>
+        </div>
+
+
+
+
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="xiao_o.html">Little O</a></li>
+				<li><a href="membership.html">Membership</a></li>
+                <li><a href="eapp.html">EAPP</a></li>
+				<li class="bottom_active">Intuiblox</li>
+			</ul>
+		</nav>
+		<p>Eva Qinchi Chen &copy; 2022</p>
+	</footer>
+
+</body>
+</html>

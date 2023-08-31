@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
 <html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/monogram.png">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/logo/monogram.png">
+	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W05M0JV0N"></script>
@@ -14,17 +23,21 @@
   	gtag('js', new Date());
   	gtag('config', 'G-7W05M0JV0N');
 	</script>
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
-	<!-- fontawesome icons -->
-    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
-	<title>EAPP</title>
+	<title>Redesign Car dealer’s Tool</title>
 </head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
 <body>
+	<!--<a class="skip" href="#main">Skip to Main Content</a>-->
+	<!-- Header is a sematic tag page that aids readability -->
 	<header>
-		<a href="index.html"><img src="images/logo.png" alt="Eva's logo: QC monogram" id="logo"></a>
+		<a href="index.html"><img src="images/logo/logo.png" alt="Eva's logo" id="logo"></a>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul class="nav_links">
@@ -34,95 +47,411 @@
 		</nav>
 	</header>
 
+	<!-- Every page should have a main tag for accessibility -->
 	<main id="main">
-		<div class="cover">
-			<img src = "images/eapp/cover.png" alt="EAPP Project Cover: Showcase of UI design of EAPP"/>
-		</div>
-		<div class="overview">
-			<div class="basics">
-				<h6>Skills</h6>
-				<p>Contextual Inquiry</p>
-				<p>Prototype</p>
-				<p>Component Library</p>
-
-				<h6>Duration</h6>
-				<p>5 one-month agile iterations</p>
-
-				<h6>Tool</h6>
-				<p>Axure, Sketch</p>
+		<div id="overview" class="fullwidth">
+			<div class="overview_introtext">
+				<p class="companytype">General Motors</p>
+				<h2>promote indeed profile updates</h2>
+				<p class="large">
+					<span class="highlight">Background: </span>
+					General Motors operates a comprehensive database to monitor the status of cars owned by their customers. Various sensors installed in the cars provide real-time data on vehicle conditions, covering damage issues caused by fender benders or more serve collisions and maintenance needs like oil levels. Car dealerships utilize this database to offer car owners timely maintenance and repair services, reflecting General Motors' commitment to exceptional customer care.
+				</p>
+				<p class="large">
+					<span class="highlight">Project Overview: </span>
+					EAPP, a B2B2C service tool, was developed to facilitate service advisors in accessing vehicle condition data and delivering services to car owners. I undertook the responsibility of redesigning this outdated tool to provide car dealers with an efficient means of accessing the information necessary to deliver high-quality customer service.
+				</p>
+				<p class="large">(Note: All confidential information within this case study has been obscured to ensure compliance with the non-disclosure agreement. The opinions expressed here are solely my own and do not represent the views of General Motors.)
+				</p>
 			</div>
-			<div class="brief">
-				<h4>EAPP is a B2B mobile app used by car dealerships. When I receive this product, we have a demo version of it. Less than 20 car dealerships were using it and testing it. My task is to redesign this product and make it a product that is valuable for our users. In this way, we can expand our market and sell this EAPP to more car dealerships.</h4>
-				<div class="companyLogo">
-					<img src="images/logo/OnstarGM.png" alt="OnStar, General Motors">
+
+			<div class="info">
+				<div>
+					<h5>Design team</h5>
+					<p>Product designer (me)</p>
+					<p>Product manager</p>
+					<p>Business analyst</p>
+					<p>IT project manager</p>
+				</div>
+
+				<div>
+					<h5>My responsibility</h5>
+					<p>Conducted UX research</p>
+					<p>Planned sprints with the team</p>
+					<p>Designed UX prototypes</p>
+					<p>Developed a design system</p>
+				</div>
+
+				<div>
+					<h5>Duration</h5>
+					<p>1 year</p>
+					<p>5 sprints</p>
+				</div>
+
+				<div>
+					<h5>Company</h5>
+					<img class="logoimg" src="images/product_eapp/logo.png" alt="General Motors' logo"/>
+				</div>
+			</div>
+
+			<img class="shadowbox" src="images/product_eapp/cover.png" alt="A cover of the final delivery showcase."/>
+
+		</div>
+
+		<div id="problemsolution" class="fullwidth">
+			<div class="inner_bigright">
+				<div> <!-- title of this section -->
+					<div class="sectionslash"></div>
+					<h2>problem & solution</h2>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Business goal</h3>
+						<p>The objective was to enhance the car dealer's application, EAPP, to make it more appealing to a broader range of car dealer brands (subsidiaries) within the General Motors family, including Cadillac, Buick, and Chevy.</p>
+					</div>
+					<div>
+						<h3>Design problems (high level)</h3>
+						<ol class="numberlist">
+							<li>The tool's existing functions and categorization must be adjusted to align with the current user workflow.</li>
+							<li>The presentation of information within the tool was difficult to read, thus affecting staff efficiency.</li>
+							<li>Staff had to manually sync information with colleagues, which led to inefficiencies.</li>
+							<li>The application lacked a design system, making the development and iteration processes less streamlined.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<div class="secondspacer">
+				<h3>Solution</h3>
+				<div>
+					<h5>Solution 1: information structure</h5>
+					<p>I reworked the information structure to better align with the user's workflow.</p>
+				</div>
+				<img class="roundbox" src = "images/product_eapp/2_infoarch.png" alt="User flow diagram of the solution"/>
+			</div>
+
+			<div class="secondspacer">
+				<div>
+					<h5>Solution 2 & 3 in the interface (partial)</h5>
+					<p>I introduced a new information folding card design to replace the old information pages and added a history records feature to automatically sync information in the system, eliminating manual syncing.</p>
+				</div>
+				<div class="twovideocolumn">
+					<div class="container_iphone_video">
+						<video src="videos/product_eapp/fold_cards.mov" controls></video>
+					</div>
+					<div class="container_iphone_video">
+						<video src="videos/product_eapp/take_notes.mov" controls></video>
+					</div>
+				</div>
+			</div>
+
+			<div class="secondspacer">
+				<div>
+					<h5>Solution 4: Design system (partial)</h5>
+					<p>I established and maintained a design system for the new product. This document benefits engineers during the coding process and is a valuable guide for new designers joining the project.</p>
+				</div>
+				<div>
+					<h6>Design guides (partial)</h6>
+					<p>The guide consists of eight chapters that address key aspects such as color, typography, icons, task cards statuses, and more.</p>
+					<img class="fullwidthimg" src = "images/product_eapp/2_guides.png" alt="Design system showcase"/>
+				</div>
+				<div>
+					<h6>Component library</h6>
+					<img class="roundbox" src = "images/product_eapp/2_library.png" alt="Design system showcase"/>
 				</div>
 			</div>
 		</div>
 
-		<div class="sect">
-			<h2>EAPP at a Glance</h2>
-			<div class="fleximgshow">
-				<img src="images/eapp/demo-cards.png" alt="dealers get their tasks on the cards">
-				<img src="images/eapp/demo-chart.png" alt="managers see charts and understand the performence">
-				<img src="images/eapp/demo-dtc.png" alt="new dtc information structure is clean">
-				<img src="images/eapp/demo-homepage.png" alt="homepage of the eapp">
-				<img src="images/eapp/demo-login.png" alt="login page of the eapp">
-				<img src="images/eapp/demo-my.png" alt="my profile page of the eapp">
-				<img src="images/eapp/demo-note.png" alt="customer care staff can write notes here">
-				<img src="images/eapp/demo-olddtc.png" alt="old dtc image is not in a good structure">
+		<div id="significance" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>impact</h2>
+			</div>
+
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Improve customer satisfaction at dealerships</h3>
+					<p>The efficiency of service advisors in providing after-sales customer care was enhanced, which improved customer satisfaction and the store reputation of Buick and Cadillac car dealers.</p>
+				</div>
+				<div>
+					<h3>Boost revenue</h3>
+					<p>The product's user base increased from 20 to 3000 car dealer stores. This product was sold to approximately 3000 subsidiaries, including Cadillac and Buick car dealers, accounting for half of the revenue in my department.</p>
+				</div>
 			</div>
 		</div>
 
-		<div class="myrole eapp">
-			<h2>Context</h2>
-			<p>DURATION: 2019/12 – 2020/12, 5 Launches, 2 – 3 weeks for design per launch</p>
-			<br>
-			<p>SKILLS: Contextual Inquiry, Product Direction, System-wide prototype, Collaboration</p>
-			<br>
-			<p>TOOLS: Axure, Sketch, Lanhu</p>
-			<img src = "images/eapp/timeline.png" alt="Timeline of the project shows that we did agile development"/>
+		<div id="research" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>ux research</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Identifying dealerships' task allocation and challenges</h3>
+						<p><span class="colorhighlight">Methodology: </span>I conducted a contextual inquiry with 15 staff members from 5 dealership stores. The participants included both managers and service advisors.</p>
+					</div>
+					<div class="twoevencolumn">
+						<img class="fullwidthimg" src="images/product_eapp/4_participants1.png" alt="The profile pictures of the participants for the contextual inquiry."/>
+						<img class="fullwidthimg" src="images/product_eapp/4_participants2.png" alt="The profile pictures of the participants for the contextual inquiry."/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Finding 1: Function planning was outdated</h3>
+						<h5>Many functions were redundant, and the only useful function was not well-designed to meet user requirements.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote1.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">I expected that my employees could utilize EAPP to generate more car repair and service fees. However, I do not realize any profit from EAPP! It has so many useless functions, and the only function I care about is difficult to use.<br>– Dealer store manager No.3</p>
+						</div>
+					</div>
+					<div>
+						<h5>The function categorization did not match users' work allocation.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote2.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">I have to sift through 3000 maintenance service entries manually every week. It is a waste of my time.<br>– Car repair service advisor No.3</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Finding 2: Information is not easy to read</h3>
+						<h5>Inconvenient: Switching between two pages to complete one task.</h5>
+						<div class="twoevencolumn">
+							<img class="fullwidthimg" src="images/product_eapp/4_oldui.png" alt="old UI"/>
+							<div class="quotes_bubble">
+								<img src="images/product_eapp/4_quote3.png" alt="Participant No.9" width="70"/>
+								<p class="quotes">I have to switch back and forth between the information list and detailed information. I handle over 3000 pieces of information and make more than 3000 calls a week. This setting slows me down and sometimes causes me to lose track of my tasks.<br>– Maintenance service advisor No.3</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h5>The information hierarchy did not align with users' needs.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote4.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">I have to search for useful information in the task. Typically, I only need the customer's name, phone number, car model, plate number, and car condition issues. I only require other details if customers request confirmation.<br>– Maintenance service advisor No.1</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Finding 3: Information synchronization is not well designed.</h3>
+						<h5>Staff manually shared information with colleagues, alternating between mobile, desktop, and paper, resulting in low efficiency.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote6.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">Together with my coworkers, we make calls to over 6000 customers every week. In the system, we don't know who has been called and who hasn't. We have to allocate our customers using Excel tables, which is tedious. We also get confused when new tasks arrive after work allocation.<br>– Maintenance service advisor No.2</p>
+						</div>
+					</div>
+					<div>
+						<h5>There was no information syncing with different departments, leading to repeated questioning of car owners, loss of trust, and customer frustration.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote7.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">Sometimes OnStar has already communicated with the customer. Customers get annoyed with repetitive questions.<br>– Maintenance service advisor No.5</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Personas & user journey</h3>
+						<h5>Direct user personas: dealership service advisors </h5>
+						<img class="fullwidthimg" src="images/product_eapp/4_persona1.png" alt="direct user persona 1."/>
+						<img class="fullwidthimg" src="images/product_eapp/4_persona2.png" alt="direct user persona 2."/>
+					</div>
+					<div>
+						<h5>Indirect user persona: car owners</h5>
+						<img class="fullwidthimg" src="images/product_eapp/4_persona3.png" alt="indirect user persona."/>
+					</div>
+					<div>
+						<h5>User journey</h5>
+						<img class="fullwidthimg" src="images/product_eapp/4_userjourney.png" alt="user journey."/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="direction" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>key design direction</h2>
+			</div>
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Replanning function</h3>
+					<p>Redesign the information structure of the entire application. Remove redundant functions and concentrate design efforts on the currently needed function.</p>
+				</div>
+				<div>
+					<h3>Improve information readability</h3>
+					<ul class="points">
+						<li>Redesign the information reading flow to enhance staff efficiency.</li>
+						<li>Redesign the alert threshold to notify only when appropriate.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Improve information sync among workers and departments</h3>
+					<ul class="points">
+						<li>Implement a new, convenient information sync system within the application for service advisors.</li>
+						<li>Expand the product ecosystem to allow for more information sync with the car owner's account and other customer care teams.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 
 
-		<div class="imgshowcase">
-			<h2>Process</h2>
-			<img src = "images/eapp/context.png" alt="How Eapp works? It collects car data and alert the dealership when car owners needs service"/>
-			<img src = "images/eapp/persona-angry.png" alt="The manager was angry because EAPP doesn't help them earn revenue" />
-			<img src = "images/eapp/goals.png" alt="My design goal is to make EAPP an effetive tool for dealers to earn money" />
-			<img src = "images/eapp/persona-collision.png" alt="Persona one: Collision Care Staff wish the information on EAPP can be valid" />
-			<img src = "images/eapp/persona-mainenance.png" alt="Persona two: 	Mainenance Care staff wish to reduce workload" />
-			<img src = "images/eapp/persona-manager.png" alt="Persona three: Managers need to monitor the KPI" />
-			<img src = "images/eapp/user-mood.png" alt="User Mood Journey is bad when information is checked"/>
-			<img src = "images/eapp/info-arch-5.png" alt="Newly Designed Information architecture is clear" />
-			<img src = "images/eapp/flowchart.jpg" alt="The user flow was shorten" />
-			<img src = "images/eapp/solution-infopush.png" alt="Notification push method was changed from bidding mode to direct mode" />
-			<img src = "images/eapp/solution-homepage.png" alt="Homepage was redesigned so that the information is clear" />
+		<div id="decision" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>ideation, prototypes & iterations</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Function and categorization re-planning</h3>
+						<p>To meet evolving user needs, I re-designed the information structure of the application.</p>
+						<ul class="points">
+							<li><span class="highlight">Old information structure: </span>The old structure had multiple functions that were no longer in use.</li>
+							<li><span class="highlight">Iteration 2: </span>I focused on decluttering the application by retaining only the useful function.</li>
+							<li><span class="highlight">Iteration 5: </span>As larger dealer organizations began using our product, and with their more detailed working allocations for customer care, I further iterated on the information categorization to fit a broader user base.</li>
+						</ul>
+					</div>
+					<div>
+						<h6>Information architecture design choice</h6>
+						<img class="roundbox" src="images/product_eapp/6_1_infoarch.png" alt="Information structure changes two rounds."/>
+					</div>
+					<div>
+						<h6>Homepage brainstorming</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_1_draft.png" alt="Homepage brainstorming."/>
+					</div>
+					<div>
+						<h6>Homepage design choice (High Fidelity)</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_1_choice.png" alt="Homepage design choice."/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Making information easier to read</h3>
+						<p>Information card design: I created a foldable information card design for users. When calling customers, they can quickly glance at essential information and unfold the card for additional information. This design improves the service advisors' working efficiency.</p>
+					</div>
+					<div>
+						<h6>Information design brainstorming</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_2_draft.png" alt="Information design brainstorming"/>
+					</div>
+					<div>
+						<h6>Information design choice</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_2_choice.png" alt="Information design choice"/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Improving information synchronization with co-workers</h3>
+						<p>I added a feature that allows users to update task status within the application, enabling effective intra-team communication.</p>
+					</div>
+					<div>
+						<h6>Task flowchart & task status variations</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_3_taskflow.png" alt="Task flowchart & task status variations"/>
+					</div>
+					<div>
+						<h6>Color codes for task statuses</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_3_cards.png" alt="Color codes for task statuses"/>
+					</div>
+					<div>
+						<h6>Flow for sharing notes among teammates (partial)</h6>
+						<img class="fullwidthimg" src="images/product_eapp/6_3_flow.png" alt="Flow for sharing notes among teammates (high-fidelity)"/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Improving information synchronization with other departments</h3>
+						<p>OnStar confirms user information and car conditions based on their service. I integrated this information to avoid repetitive questioning by different departments, thus improving customer experience.</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_eapp/6_4_choice.png" alt="Flow for sharing notes among departments"/>
+				</div>
+			</div>
 		</div>
 
-		<div class="overview eapp">
-			<h2>Impact</h2>
-			<p>The user has grown from 20 dealerships to about 3000.</p>
-			<br>
-			<p>We earn $150,000 more from this app, and it was one-quarter of our departments’ revenue in the year 2020. I was really proud of that.</p>
-			<br>
-			<p>EAPP impacted the behaviors of General Motors car dealers. Many of them are now hiring new employees for customer connection using the EAPP. It has a positive impact on GM’s brand image.</p>
+		<div id="validation" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>design validation</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Verify the design with stakeholders</h3>
+						<p>To ensure the feasibility of the designs, I planned the contents of the design for different sprints in collaboration with the Product Manager and Business Analyst. The aim was to launch feasible designs as early as possible to allow for necessary usability improvements.</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_eapp/7_table.png" alt="sprints plan for each iteration"/>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Verification with direct users</h3>
+						<p><span class="highlight">Methodology: </span>I used questionnaires to gather feedback from director users after sprint 2 and sprint 4.</p>
+					</div>
+					<div class="thirdspacer">
+						<h5>Finding 1: The new information card design and categorization received positive feedback.</h5>
+						<div class="twoevencolumn">
+							<div class="quotes_bubble">
+								<img src="images/product_eapp/4_quote2.png" alt="Participant No.1" width="70"/>
+								<p class="quotes">I saved about one hour daily on calling those customers.<br>– Maintenance service advisor No.1</p>
+							</div>
+							<div class="quotes_bubble">
+								<img src="images/product_eapp/4_quote3.png" alt="Participant No.9" width="70"/>
+								<p class="quotes">I can now focus on helping customers deal with their collisions. I don’t have to sift out my task from the long list.<br>– Repair service advisor No.9</p>
+							</div>
+						</div>
+					</div>
+					<div class="thirdspacer">
+						<h5>Finding 2: Departmental information synchronization helped users gain more trust from car owners and increased the customer drop-in rate.</h5>
+						<div class="quotes_bubble">
+							<img src="images/product_eapp/4_quote4.png" alt="Participant No.9" width="70"/>
+							<p class="quotes">With the confirmed information from OnStar and the customer account. Fewer customers show their concern about the scam when I call them. The customer drop-in rate has risen. I’m glad my effort is not a waste.<br>– Maintenance service advisor No.3</p>
+						</div>
+					</div>
+					<div class="thirdspacer">
+						<div>
+							<h5>Finding 3: As larger dealer stores joined, the need for new categorization to accommodate more specific working allocations became evident.</h5>
+							<p>Many more prominent car dealers allocate their service advisors more specifically. They don't only categorize it as maintenance and repair. They separate repair into collision and minor malfunction because car owners usually need more emergent assistance from specially trained service advisors when there is a collision. Therefore, a new categorization is required in this working mode.</p>
+						</div>
+						<img class="roundbox" src="images/product_eapp/7_infoarch.png" alt="info architecture iteration"/>
+					</div>
+				</div>
+
+			</div>
 		</div>
+
+
+		<div id="reflection" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>reflection</h2>
+			</div>
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Adapting design to evolving user needs</h3>
+					<p>As the product gained popularity, it required numerous changes in its iterations to cater to a larger user group. These changes demanded significant effort and resources from both the engineering team and myself. Reflecting on this experience, I learned several important lessons:</p>
+					<ul class="points">
+						<li><span class="highlight">Understanding the Long-term Product Plan: </span>I realized the importance of grasping the long-term product plan to improve efficiency and streamline product iteration. Before initiating any design work, it's crucial to collaborate closely with product managers to understand the current and future plans for the product. This should include researching both the needs of current users and the requirements of future target users.</li>
+						<li><span class="highlight">Gradual Approach to Design Changes: </span>A step-by-step approach to design changes can help in cost-saving. Making incremental changes based on user feedback and needs allows for more manageable and cost-effective iterations.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Importance of product ecosystem</h3>
+					<p>By interacting with other departments and subsidiaries within the group company, I discovered the vital need for information synchronization across different departments. This collaboration is key to improving efficiency and having a more significant impact. Cross-team collaboration allows for a more comprehensive view of the product ecosystem and can lead to more informed and effective design decisions.</p>
+				</div>
+			</div>
+		</div>
+
 	</main>
 
+	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="xiao_o.html">Little O</a></li>
-				<li><a href="membership.html">Membership</a></li>
-				<li class="bottom_active">EAPP</li>
-				<li><a href="intuiblox.html">Intuiblox</a></li>
-			</ul>
-		</nav>
-		<br>
 		<p>Coded and Designed by Eva Qinchi Chen &copy; 2023</p>
 	</footer>
-
 </body>
 </html>
-
-

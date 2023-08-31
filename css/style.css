@@ -1,6 +1,11 @@
+
 /*==================================================================*/
-/*                           Sementic Tags                          */
+/*                           All Pages                              */
 /*==================================================================*/
+
+/*---------------------------------------------*/
+/*                Sementic Tags                */
+/*---------------------------------------------*/
 
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
@@ -30,78 +35,83 @@ nav{
 	padding: 0;
 }
 
-/*==================================================================*/
-/*                            Text styles                           */
-/*==================================================================*/
+/*---------------------------------------------*/
+/*                Text styles                  */
+/*---------------------------------------------*/
 a {
 	text-decoration: none;
 }
 
 /*h1 web  66px bold*/
 h1{
-	font-size: 3.5rem;
-	line-height: 4.8rem;
+	font-size: 3.667rem;
+	line-height: 4.583rem;
 	font-weight: bold;
 	color:#3a395e;
 }
 
 /*h2 web  48px bold*/
 h2{
-	font-size: 2.67rem;
-	line-height: 3.2rem;
+	font-size: 2.667rem;
+	line-height: 3.429rem;
 	font-weight: bold;
-	text-align: center;
 	color:#3a395e;
 }
 
 /*h3 web  28px uppercase bold*/
 h3{
-	font-size: 1.56rem;
-	line-height: 3rem;
+	font-size: 1.556rem;
+	line-height: 2.004rem;
 	font-weight: bold;
 	color:#3a395e;
+	margin-bottom: 0.778rem;
 }
 
 /*h4 web  24px bold*/
 h4{
-	font-size: 1.334rem;
-	line-height: 1.6rem;
+	font-size: 1.333rem;
+	line-height: 1.777rem;
 	font-weight: bold;
-	color:#3a395e;
+	color:#7051ef;
+	margin-bottom: 0.667rem;
 }
 
 /*h5 web  20px bold*/
 h5{
 	font-size: 1.111rem;
-	line-height: 1.333rem;
+	line-height: 1.556rem;
 	font-weight: bold;
 	color:#3a395e;
+	margin-bottom: 0.5rem;
 }
 
-/*h6 web  18px uppercase bold*/
+/*h6 web  18px neutral 700*/
 h6{
 	font-size: 1rem;
-	line-height: 1.8rem;
+	line-height: 1.444rem;
 	font-weight: bold;
-	color:#3a395e;
+	color:#6e6d8f;
+	margin-bottom: 0.5rem;
 }
-
+/*p web  18px neutral 600*/
 p{
 	font-size:1rem;
-	line-height: 1.8rem;
+	line-height: 1.778rem;
 	color:#6e6d8f;
 }
 
 .large{
 	font-size: 1.111rem;
+	line-height: 2rem;
 }
 .small{
 	font-size: 0.889rem;
 }
 
-/*==================================================================*/
-/*                    Top navigation bar                            */
-/*==================================================================*/
+
+/*---------------------------------------------*/
+/*            Top Navigation bar               */
+/*---------------------------------------------*/
 /*skip to main button (hidden button)
 .skip{
 	font-size: 0.8rem;
@@ -175,9 +185,9 @@ header{
 	background-color: #f7f6ff;
 }
 
-/*==================================================================*/
-/*                    bottom navigation bar                         */
-/*==================================================================*/
+/*---------------------------------------------*/
+/*            bottom Navigation bar            */
+/*---------------------------------------------*/
 footer nav ul{
 	padding-top: 3rem;
 	display: flex;
@@ -202,11 +212,14 @@ footer nav ul li a:hover{
 }
 
 /*==================================================================*/
-/*                    homepage intro part.                          */
+/*                           Homepage                               */
 /*==================================================================*/
+/*---------------------------------------------*/
+/*            Home intro part                  */
+/*---------------------------------------------*/
 .slash{
 	width:95px;
-    height:5px;
+    height:6px;
 	border-radius: 1px;
 	background-color: #7051ef;
 }
@@ -219,9 +232,9 @@ footer nav ul li a:hover{
 	justify-self: start;
 }
 
-/*==================================================================*/
-/*                    homepage project filter                       */
-/*==================================================================*/
+/*---------------------------------------------*/
+/*         Home project filter                 */
+/*---------------------------------------------*/
 .filter{
 	display: flex;
 	flex-direction: row;
@@ -253,10 +266,9 @@ footer nav ul li a:hover{
 }
 
 
-
-/*==================================================================*/
-/*                    homepage project cards                        */
-/*==================================================================*/
+/*---------------------------------------------*/
+/*            Home project cards               */
+/*---------------------------------------------*/
 /*cards container and layout*/
 #project{
 	display: grid;
@@ -347,6 +359,7 @@ footer nav ul li a:hover{
 }
 .case_study h6{
 	color: #7051ef;
+	margin-bottom: 0;
 }
 .case_study_chevron{
 	background-color: #f7f6ff;
@@ -371,7 +384,10 @@ footer nav ul li a:hover{
 	background-color: #7051ef;
   }
 .one_project:hover .case_study_chevron img{
-	filter: invert(98%) sepia(34%) saturate(4141%) hue-rotate(180deg) brightness(107%) contrast(106%);
+	filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1019%) hue-rotate(100deg) brightness(113%) contrast(100%);
+}
+.one_project:hover h3{
+	color: #7051ef;
 }
 
 /*==================================================================*/
@@ -481,7 +497,7 @@ footer nav ul li a:hover{
 
 /* Form Style */
 .fa-solid{
-	color: #8453c2;
+	color: #7051ef;
 }
 
 form {
@@ -505,7 +521,7 @@ input{
 	width: 85%;
 	padding: 12px 20px;
 	display: block;
-	border: 1px solid #845ec2;
+	border: 1px solid #7051ef;
 	border-radius: 0.8rem;
 	margin: auto;
 	font-family: 'Roboto', Helvetica, sans-serif;
@@ -517,7 +533,7 @@ textarea{
 	padding: 12px 20px;
 	margin: auto;
 	display: block;
-	border: 1px solid #8453c2;
+	border: 1px solid #7051ef;
 	border-radius: 0.8rem;
 	font-family: 'Roboto', Helvetica, sans-serif;
 }
@@ -527,7 +543,7 @@ input[type=checkbox]{
 }
 
 input[type=submit] {
-	background-color: #8453c2;
+	background-color: #7051ef;
 	color: white;
 	padding: 14px 20px;
 	margin: auto;
@@ -547,141 +563,187 @@ input[type=submit]:hover {
 /*==================================================================*/
 /*                          project page                            */
 /*==================================================================*/
-/* cover image */
-.cover{
-	margin: auto;
-	max-width: 80vw;
+
+/*------------------*/
+/* overview section */
+/*------------------*/
+.companytype{
+	font-size: 1.222rem;
+	line-height: 1.334rem;
+	font-weight: bold;
+	color: #7051ef;
 }
-.cover img{
-	max-width: 80vw;
+.overview_introtext{
+	display: grid;
+	gap: 0.8rem;
+}
+.info{
+	display: grid;
+	gap: 0.8rem;
+	justify-items: start;
 }
 
-/* overview part */
-.overview{
-	padding: 2rem;
+/*---------------------*/
+/*  problem & solution */
+/*---------------------*/
+.img_twocolumn{
 	display: grid;
-	grid-gap: 2rem;
+	gap: 2.5rem;
 	justify-items: center;
 }
 
-.companyLogo img{
-	width: 50%;
-	float:right;
-	padding: 0.2rem;
-	padding-top: 1.5rem;
-}
+/*---------------------*/
+/*    common layouts   */
+/*---------------------*/
 
-
-/* challenge and roles part */
-.myrole{
-	padding: 3rem;
+/* fullwidth section   */
+.fullwidth{
+	padding:1.8rem 0 1.8rem 0;
 	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 2.5rem;
-	justify-content: center;
-	align-content: center;
+	gap: 4rem;
+	margin-bottom: 7rem;
 }
-.myrole h4{
-	color: #845ec2;
-	opacity: 50%;
-	font-size: 2rem;
-	text-align: center;
-}
-
-
-/* glance part */
-.glance{
-	background-color: #dccbf3;
-	padding: 2rem;
+.inner_bigright{
 	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 2rem;
-	justify-content: center;
-	align-content: center;
+	gap: 4rem;
 }
 
-.glance p{
-	text-align: center;
-	font-style: italic;
-}
-.onePic{
-	justify-self: center;
-}
-
-
-/*parallel background image*/
-.pagebreak{
-	background-image: url("../images/xiao_o/pagebreak_mobile.png");
-	background-color: #030630;
-	min-height: 20vh;
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-
-	padding: 2rem;
-}
-.pagebreak h2, .pagebreak p{
-	color: #FFFFFF;
-}
-
-.steps{
-	padding: 2rem;
+/*  bigright section  */
+.bigright{
 	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 2rem;
+	gap: 4rem;
+	margin-bottom: 7rem;
+	padding: 1.8rem 0 1.8rem 0;
 }
 
-.onestep img{
+/* 1st level gap */
+.rightspacer{
+	display: grid;
+	gap: 4rem;
+}
+
+/* 2nd level gap */
+.secondspacer{
+	display: grid;
+	gap: 1.2rem;
+}
+.thirdspacer{
+	display: grid;
+	gap: 0.5rem;
+}
+
+
+/*-------------------------*/
+/*  other common elements  */
+/*-------------------------*/
+
+/* columns */
+.twoevencolumn{
+	display: grid;
+	gap: 2rem;
+}
+.twovideocolumn{
+	display: grid;
+	gap: 2rem;
+}
+
+/*   section title   */
+.sectionslash{
+	width:95px;
+	height:6px;
+	border-radius: 1px;
+	background-color: #7051ef;
+	margin-bottom: 1rem;
+}
+
+/* highlight texts */
+.highlight{
+	font-weight: bold;
+	color: #3a395e;
+}
+.colorhighlight{
+	font-weight: bold;
+	color:#7051ef
+}
+
+/* image classes */
+.logoimg{
+	height: 1.5rem;
+}
+.shadowbox{
+	width: 100%;
+	border-radius: 1.5rem;
+	box-shadow:
+		0 0 5px 0 rgba(39, 25, 77, 0.02),
+		0 3px 20px 0 rgba(112, 81, 239, 0.04),
+		0 10px 28px 0 rgba(39, 25, 77, 0.03);
+}
+.roundbox{
+	width: 100%;
+	border-radius: 1.1rem;
+}
+.fullwidthimg{
 	width: 100%;
 }
-
-.imgshowcase img{
-	display: block;
- 	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-}
-.imgshowcase{
-	margin-top: 2rem;
-	padding-top: 2rem;
-}
-.mobilenoshow img{
-	display: none;
+.centerimg{
+	max-width: 100%;
 }
 
-/*different pages's variation!!!!!!*/
-.eapp{
-	background-color: #e6ebf3;
+/* lists & points */
+.points{
+	font-size: 1rem;
+	line-height: 1.778rem;
+	color:#6e6d8f;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin: 0.5rem 0 0.5rem 1rem;
+}
+.points li{
+	margin-bottom: 0.5rem;
+}
+.numberlist{
+	font-size: 1rem;
+	line-height: 1.778rem;
+	color:#6e6d8f;
+	list-style-type: decimal;
+	list-style-position: outside;
+	margin: 0.5rem 0 0.5rem 2rem;
+}
+.numberlist li{
+	margin-bottom: 0.5rem;
+}
+
+/* user quotes */
+.quotes{
+	padding: 1rem;
+	background-color: #f7f6ff;
+	border-radius: 0 1rem 1rem 1rem;
+	border: 1px #7051ef dashed;
+}
+.quotes_bubble{
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	gap: 1rem;
 }
 
 
-/*eapp flex image showcase*/
-.sect{
-	padding:2rem;
-}
-
-.fleximgshow{
-	display: flex;
-	flex-direction: column;
-}
-.fleximgshow img{
-	width: 280px;
-	margin: 1rem;
-	align-self: center;
-}
-
-/* color variation */
-.purple{
-	background-color: #dccbf3;
-}
-.purple h3 {
-	color: #030630;
-}
 /*==================================================================*/
 /*                          video style                             */
 /*==================================================================*/
+
+/*------------------------*/
+/*  iphone X video player */
+/*------------------------*/
+.container_iphone_video video{
+	width: 100%;
+	max-width: 400px;
+	border-radius: 3rem;
+}
+
+
+/*-----------------------*/
+/*       big video       */
+/*-----------------------*/
 
 .options{
 	display: flex;
@@ -749,9 +811,9 @@ canvas {
 /*==================================================================*/
 /*                  @media   screens                                */
 /*==================================================================*/
-/*================*/
-/* tablet screen */
-/*==============*/
+/*=========================================*/
+/*              tablet screen              */
+/*=========================================*/
 @media screen and (min-width: 700px){
 	html{
 		font-size: 16px;
@@ -790,32 +852,70 @@ canvas {
 
 	/*========================*/
 	/*project page*/
-	.overview{
-		padding: 3rem;
-		grid-template-columns: 1fr 3fr;
-		grid-gap: 2rem;
+
+	/*------------------*/
+	/* overview section */
+	/*------------------*/
+	.info{
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
 	}
-	.companyLogo img{
-		width: 30%;
+	/*--------------------*/
+	/* problem & solution */
+	/*--------------------*/
+	.img_twocolumn{
+		grid-template-columns: 1fr 1.2fr;
+		gap: 3.5rem;
+		align-items: center;
+		justify-items: left;
 	}
 
+	/*---------------------*/
+	/*   common layouts    */
+	/*---------------------*/
+	/* fullwidth section */
+	.fullwidth{
+		gap: 4.5rem;
+		margin-bottom: 10rem;
+	}
+	.inner_bigright{
+		grid-template-columns: 1fr 2.8fr;
+		gap: 3.5rem;
+	}
 
+	/* bigright section   */
+	.bigright{
+		grid-template-columns: 1fr 2.8fr;
+		gap: 3.5rem;
+		margin-bottom: 10rem;
+	}
+	/* 1st level gap */
+	.rightspacer{
+		gap: 4.5rem;
+	}
+	/* 2nd level gap */
+	.secondspacer{
+		gap: 1.3rem;
+	}
+	.thirdspacer{
+		gap: 0.6rem;
+	}
 
-
-	/*eapp flex image showcase*/
-	.fleximgshow{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
+	/*------------------------*/
+	/* other common elements  */
+	/*------------------------*/
+	/* columns */
+	.twovideocolumn{
+		grid-template-columns: 1fr 1fr;
 	}
 
 }
 
 
 
-/*==================*/
-/* computer screen */
-/*================*/
+/*=========================================*/
+/*             computer screen             */
+/*=========================================*/
 @media screen and (min-width: 1080px){
     html{
 		font-size: 18px;
@@ -906,71 +1006,90 @@ canvas {
 
 	/*========================*/
 	/*project page*/
-	.overview{
-		padding: 8rem;
-		grid-template-columns: 1fr 5fr;
-		grid-gap: 8rem;
+
+	/*--------------------*/
+	/* overview section   */
+	/*--------------------*/
+	.overview_introtext{
+		max-width: 75%;
 	}
-	.companyLogo img{
-		width: 20%;
+	.info{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap:3rem;
 	}
 
-	.myrole{
-		padding: 6rem;
-		grid-template-columns: 1fr 1fr 1fr;
+	/*--------------------*/
+	/* problem & solution */
+	/*--------------------*/
+	.img_twocolumn{
+		grid-template-columns: 1fr 1fr;
+		gap: 4.5rem;
 	}
 
-	.glance{
-		padding: 6rem;
-		grid-template-columns: 1fr 1fr 1fr;
+	/*--------------------*/
+	/*   common layouts   */
+	/*--------------------*/
+
+	/*  fullwidth section  */
+	.fullwidth{
+		padding: 2.2rem 0 2.2rem 0;
+		gap: 6rem;
+		margin-bottom: 13.378rem;
 	}
-	.glance h2{
-		grid-column: 2/3;
-	}
-	.onePic{
-		grid-row: 2/3;
+	.inner_bigright{
+		grid-template-columns: 1fr 3.5fr;
+		gap: 4.5rem;
 	}
 
-	.pagebreak{
-		background-image: url("../images/xiao_o/pagebreak_pc.png");
-		min-height: 70vh;
-		padding: 0 30%;
+	/* bigright section   */
+	.bigright{
+		grid-template-columns: 1fr 3.5fr;
+		gap: 4.5rem;
+		margin-bottom: 13.378rem;
+		padding: 2.2rem 0 2.2rem 0;
 	}
-	.pagebreak h2, .pagebreak p{
-		position:relative;
-		top:30vh;
-
+	.rightspacer{
+		gap: 6rem;
 	}
-
-	.steps{
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 5rem;
-		padding: 10rem;
+	.secondspacer{
+		gap: 1.667rem;
 	}
-
-	.mobilenoshow img{
-		display: block;
+	.thirdspacer{
+		gap: 0.8rem;
 	}
 
-	/*eapp flex image showcase*/
-	.fleximgshow{
-		justify-content: center;
+	/*------------------------*/
+	/* other common elements  */
+	/*------------------------*/
+	/*     columns     */
+	.twoevencolumn{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* image classes */
+	.logoimg{
+		height: 2.5rem;
+	}
+	.centerimg{
+		max-width: 75%;
+		margin: auto;
 	}
 
   }
 
 
-/*==================*/
-/* wide screen */
-/*================*/
+
+/*=========================================*/
+/*             wide screen                 */
+/*=========================================*/
 @media screen and (min-width: 1600px){
 	body{
 		max-width: 1600px;
 		margin: auto;
 	}
-	/*------------*/
-	/* about page */
-	/*------------*/
+	/*--------------------*/
+	/*     about page     */
+	/*--------------------*/
 	.about_card{
 		max-width: 720px;
 	}
@@ -982,9 +1101,9 @@ canvas {
 
 }
 
-/*================*/
-/* reduce motion */
-/*==============*/
+/*===========================================*/
+/*               reduce motion               */
+/*===========================================*/
 @media screen and (prefers-reduced-motion: reduce){
 	html{
 		animation: none;

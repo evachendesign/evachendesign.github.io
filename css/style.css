@@ -579,7 +579,7 @@ input[type=submit]:hover {
 }
 .info{
 	display: grid;
-	gap: 0.8rem;
+	gap: 1.8rem;
 	justify-items: start;
 }
 
@@ -587,6 +587,12 @@ input[type=submit]:hover {
 /*  problem & solution */
 /*---------------------*/
 .img_twocolumn{
+	display: grid;
+	gap: 2.5rem;
+	justify-items: center;
+}
+
+.videoimg_column{
 	display: grid;
 	gap: 2.5rem;
 	justify-items: center;
@@ -858,13 +864,20 @@ canvas {
 	/*------------------*/
 	.info{
 		grid-template-columns: 1fr 1fr;
-		gap: 1.5rem;
+		gap: 2.5rem;
 	}
 	/*--------------------*/
 	/* problem & solution */
 	/*--------------------*/
 	.img_twocolumn{
 		grid-template-columns: 1fr 1.2fr;
+		gap: 3.5rem;
+		align-items: center;
+		justify-items: left;
+	}
+
+	.videoimg_column{
+		grid-template-columns: 1fr 2.5fr;
 		gap: 3.5rem;
 		align-items: center;
 		justify-items: left;
@@ -1014,8 +1027,8 @@ canvas {
 		max-width: 75%;
 	}
 	.info{
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		gap:3rem;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	/*--------------------*/

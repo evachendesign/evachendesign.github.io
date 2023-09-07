@@ -29,7 +29,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
-	<title>Redesign Car dealer’s Tool</title>
+	<title>Redesign car dealer’s tool</title>
 </head>
 
 <!-- All of the visible code in the page belongs in the body tag -->
@@ -114,7 +114,7 @@
 						<ol class="numberlist">
 							<li>The tool's existing functions and categorization must be adjusted to align with the current user workflow.</li>
 							<li>The presentation of information within the tool was difficult to read, thus affecting staff efficiency.</li>
-							<li>Staff had to manually sync information with colleagues, which led to inefficiencies.</li>
+							<li>Existing processes required staff to synchronize information manually, creating operational inefficiencies.</li>
 							<li>The application lacked a design system, making the development and iteration processes less streamlined.</li>
 						</ol>
 					</div>
@@ -133,14 +133,15 @@
 			<div class="secondspacer">
 				<div>
 					<h5>Solution 2 & 3 in the interface (partial)</h5>
-					<p>I introduced a new information folding card design to replace the old information pages and added a history records feature to automatically sync information in the system, eliminating manual syncing.</p>
+					<p>2. Implemented a streamlined information presentation using a folding card design, enhancing readability and user experience. (See video below)</p>
+					<p>3. Introduced a history records functionality that automates information synchronization within the system, thereby eliminating the need for manual syncing. (See image below)</p>
 				</div>
-				<div class="twovideocolumn">
-					<div class="container_iphone_video">
-						<video src="videos/product_eapp/fold_cards.mov" controls></video>
-					</div>
+				<div class="videoimg_column">
 					<div class="container_iphone_video">
 						<video src="videos/product_eapp/take_notes.mov" controls></video>
+					</div>
+					<div>
+						<img class="fullwidthimg" src="images/product_eapp/6_2_choice.png" alt="new history records vs. old no information sync in the system."/>
 					</div>
 				</div>
 			</div>
@@ -150,10 +151,13 @@
 					<h5>Solution 4: Design system (partial)</h5>
 					<p>I established and maintained a design system for the new product. This document benefits engineers during the coding process and is a valuable guide for new designers joining the project.</p>
 				</div>
-				<div>
-					<h6>Design guides (partial)</h6>
-					<p>The guide consists of eight chapters that address key aspects such as color, typography, icons, task cards statuses, and more.</p>
-					<img class="fullwidthimg" src = "images/product_eapp/2_guides.png" alt="Design system showcase"/>
+				<div class="thirdspacer">
+					<div>
+						<h6>Design guides (partial)</h6>
+						<p>The guide consists of eight chapters that address key aspects such as color, typography, icons, task cards statuses, and more.</p>
+					</div>
+					<img class="fullwidthimg" src = "images/product_eapp/2_guides.png" alt="Design system showcase, colors"/>
+					<img class="fullwidthimg" src = "images/product_eapp/2_guides2.png" alt="Design system showcase, task cards"/>
 				</div>
 				<div>
 					<h6>Component library</h6>
@@ -170,12 +174,16 @@
 
 			<div class="secondspacer"> <!-- details of this section -->
 				<div>
-					<h3>Improve customer satisfaction at dealerships</h3>
-					<p>The efficiency of service advisors in providing after-sales customer care was enhanced, which improved customer satisfaction and the store reputation of Buick and Cadillac car dealers.</p>
-				</div>
-				<div>
 					<h3>Boost revenue</h3>
 					<p>The product's user base increased from 20 to 3000 car dealer stores. This product was sold to approximately 3000 subsidiaries, including Cadillac and Buick car dealers, accounting for half of the revenue in my department.</p>
+				</div>
+				<div>
+					<h3>Augmented dealership's body work revenue</h3>
+					<p>This app fundamentally serves to drive customers to dealerships for vehicle repairs, effectively securing an uptick in customer patronage and elevating the revenue generated from repairs and maintenance.</p>
+				</div>
+				<div>
+					<h3>Improve customer satisfaction at dealerships</h3>
+					<p>The efficiency of service advisors in providing after-sales customer care was enhanced, which improved customer satisfaction and the store reputation of Buick and Cadillac car dealers.</p>
 				</div>
 			</div>
 		</div>
@@ -203,7 +211,7 @@
 						<h5>Many functions were redundant, and the only useful function was not well-designed to meet user requirements.</h5>
 						<div class="quotes_bubble">
 							<img src="images/product_eapp/4_quote1.png" alt="Participant No.9" width="70"/>
-							<p class="quotes">I expected that my employees could utilize EAPP to generate more car repair and service fees. However, I do not realize any profit from EAPP! It has so many useless functions, and the only function I care about is difficult to use.<br>– Dealer store manager No.3</p>
+							<p class="quotes">I expected that my employees could utilize EAPP to generate more car repair and service fees. However, I do not realize any profit from EAPP! It has so many useless functions, and the only function I care about is difficult to use.<br>– Dealership manager No.2</p>
 						</div>
 					</div>
 					<div>
@@ -234,6 +242,16 @@
 							<p class="quotes">I have to search for useful information in the task. Typically, I only need the customer's name, phone number, car model, plate number, and car condition issues. I only require other details if customers request confirmation.<br>– Maintenance service advisor No.1</p>
 						</div>
 					</div>
+					<div>
+						<h5>The operational report provides excessive, unrelated details that don't align with managers' current requirements.</h5>
+						<div class="twoevencolumn">
+							<img class="fullwidthimg" src="images/product_eapp/4_oldreport.png" alt="old report UI"/>
+							<div class="quotes_bubble">
+								<img src="images/product_eapp/4_quote5.png" alt="Participant No.9" width="70"/>
+								<p class="quotes">I want to oversee if my employees have completed all their tasks. Additionally, I'd like insights into the number of successful tasks and how these contribute to our revenue.<br>– Dealership manager No.1</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="secondspacer">
@@ -255,11 +273,14 @@
 				</div>
 
 				<div class="secondspacer">
-					<div>
-						<h3>Personas & user journey</h3>
-						<h5>Direct user personas: dealership service advisors </h5>
+					<div class="thirdspacer">
+						<div>
+							<h3>Personas & user journey</h3>
+							<h5>Direct user personas: dealership service advisors & dealership manager </h5>
+						</div>
 						<img class="fullwidthimg" src="images/product_eapp/4_persona1.png" alt="direct user persona 1."/>
 						<img class="fullwidthimg" src="images/product_eapp/4_persona2.png" alt="direct user persona 2."/>
+						<img class="fullwidthimg" src="images/product_eapp/4_persona4.png" alt="direct user persona 3."/>
 					</div>
 					<div>
 						<h5>Indirect user persona: car owners</h5>
@@ -280,7 +301,7 @@
 			</div>
 			<div class="secondspacer"> <!-- details of this section -->
 				<div>
-					<h3>Replanning function</h3>
+					<h3>Replan product features</h3>
 					<p>Redesign the information structure of the entire application. Remove redundant functions and concentrate design efforts on the currently needed function.</p>
 				</div>
 				<div>
@@ -309,12 +330,12 @@
 			<div class="rightspacer"> <!-- details of this section -->
 				<div class="secondspacer">
 					<div>
-						<h3>Function and categorization re-planning</h3>
+						<h3>Features and categorization re-planning</h3>
 						<p>To meet evolving user needs, I re-designed the information structure of the application.</p>
 						<ul class="points">
 							<li><span class="highlight">Old information structure: </span>The old structure had multiple functions that were no longer in use.</li>
-							<li><span class="highlight">Iteration 2: </span>I focused on decluttering the application by retaining only the useful function.</li>
-							<li><span class="highlight">Iteration 5: </span>As larger dealer organizations began using our product, and with their more detailed working allocations for customer care, I further iterated on the information categorization to fit a broader user base.</li>
+							<li><span class="highlight">Sprint 2: </span>I focused on decluttering the application by retaining only the useful function.</li>
+							<li><span class="highlight">Sprint 5: </span>As larger dealer organizations began using our product, and with their more detailed working allocations for customer care, I further iterated on the information categorization to fit a broader user base.</li>
 						</ul>
 					</div>
 					<div>
@@ -334,7 +355,8 @@
 				<div class="secondspacer">
 					<div>
 						<h3>Making information easier to read</h3>
-						<p>Information card design: I created a foldable information card design for users. When calling customers, they can quickly glance at essential information and unfold the card for additional information. This design improves the service advisors' working efficiency.</p>
+						<h5>Information card design</h5>
+						<p>I created a foldable information card design for users. When calling customers, they can quickly glance at essential information and unfold the card for additional information. This design improves the service advisors' working efficiency.</p>
 					</div>
 					<div>
 						<h6>Information design brainstorming</h6>
@@ -343,6 +365,11 @@
 					<div>
 						<h6>Information design choice</h6>
 						<img class="fullwidthimg" src="images/product_eapp/6_2_choice.png" alt="Information design choice"/>
+					</div>
+					<div>
+						<h5>Operational report redesign</h5>
+						<p>I refined the report to focus on three vital metrics that are crucial for managers to monitor: Task Tracking Status, Success Rate, and Revenue.</p>
+						<img class="fullwidthimg" src="images/product_eapp/6_5_choice.png" alt="Operatoinal report choice"/>
 					</div>
 				</div>
 
@@ -383,14 +410,14 @@
 			<div class="rightspacer"> <!-- details of this section -->
 				<div class="secondspacer">
 					<div>
-						<h3>Verify the design with stakeholders</h3>
+						<h3>Verify the feasibility with stakeholders</h3>
 						<p>To ensure the feasibility of the designs, I planned the contents of the design for different sprints in collaboration with the Product Manager and Business Analyst. The aim was to launch feasible designs as early as possible to allow for necessary usability improvements.</p>
 					</div>
 					<img class="fullwidthimg" src="images/product_eapp/7_table.png" alt="sprints plan for each iteration"/>
 				</div>
 				<div class="secondspacer">
 					<div>
-						<h3>Verification with direct users</h3>
+						<h3>Verify the desirability with direct users</h3>
 						<p><span class="highlight">Methodology: </span>I used questionnaires to gather feedback from director users after sprint 2 and sprint 4.</p>
 					</div>
 					<div class="thirdspacer">
@@ -425,6 +452,50 @@
 			</div>
 		</div>
 
+		<div id="final" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>final delivery (partial)</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Enhanced information readability</h3>
+						<p><span class="highlight">Folding cards: </span>The innovative folding card design eradicates the need for secondary pages, offering a sleek display of critical information that facilitates a quicker and more streamlined workflow. (See video below)</p>
+						<p><span class="highlight">Status color codes: </span>This feature visually represents task statuses within the app, promoting real-time updates and preventing redundant efforts on identical tasks. (See image below)</p>
+					</div>
+					<div class="videoimg_column">
+						<div class="container_iphone_video">
+							<video src="videos/product_eapp/fold_cards.mov" controls></video>
+						</div>
+						<div>
+							<img class="fullwidthimg" src="images/product_eapp/8_status.png" alt="status color codes."/>
+						</div>
+					</div>
+					<div>
+						<p><span class="highlight">Improved operational report: </span>I refined the report to focus on three vital metrics that are crucial for managers to monitor: Task Tracking Status, Success Rate, and Revenue.</p>
+						<img class="fullwidthimg" src="images/product_eapp/8_report.png" alt="operational report design"/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Upgraded information synchronization</h3>
+						<p><span class="highlight">Task track history sharing: </span>I implemented a feature where users can seamlessly update task statuses within the app, fostering efficient communication within teams. (See video below)</p>
+						<p><span class="highlight">Inter-departmental information sync: </span>I integrated information verification through OnStar, which assesses user data and vehicle conditions based on their service, eliminating repeated queries across various departments and enhancing the customer experience. (See image below)</p>
+					</div>
+					<div class="videoimg_column">
+						<div class="container_iphone_video">
+							<video src="videos/product_eapp/take_notes.mov" controls></video>
+						</div>
+						<div>
+							<img class="fullwidthimg" src="images/product_eapp/6_4_choice.png" alt="sync information with other departments."/>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 		<div id="reflection" class="bigright">
 			<div> <!-- title of this section -->

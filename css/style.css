@@ -743,7 +743,7 @@ input[type=submit]:hover {
 .container_iphone_video video{
 	width: 100%;
 	max-width: 400px;
-	border-radius: 3rem;
+	border-radius: 2rem;
 }
 
 

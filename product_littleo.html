@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/logo/monogram.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W05M0JV0N"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+ 	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-7W05M0JV0N');
+	</script>
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+	<title>Voice Assistant Design</title>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!--<a class="skip" href="#main">Skip to Main Content</a>-->
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<a href="index.html"><img src="images/logo/logo.png" alt="Eva's logo" id="logo"></a>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul class="nav_links">
+				<li><a href = "docs/Resume_2C.pdf" title="eva chen resumé" download="" target="_blank">resumé</a></li>
+				<li><a href = "about.html">about</a></li>
+				<li><a href = "index.html" >portfolio</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main id="main">
+		<div id="overview" class="fullwidth">
+			<div class="overview_introtext">
+				<p class="companytype">General Motors</p>
+				<h2>voice assistance design</h2>
+				<p class="large">
+					The "Little O" project marked the advent of an innovative voice assistance feature, being the inaugural integration in Buick automobiles and the OnStar App, a revolutionary IoT tool facilitating remote vehicle control.
+				</p>
+				<p class="nda">(NDA note: All sensitive data within this case study have been redacted to adhere to the non-disclosure agreement. The perspectives shared herein are exclusively mine and do not reflect General Motors' stance.)
+				</p>
+			</div>
+
+			<div class="info">
+				<div>
+					<h5>Design team</h5>
+					<p>Product designer (myself)</p>
+					<p>Product manager</p>
+					<p>Conversation designer</p>
+					<p>IT engineers</p>
+				</div>
+
+				<div>
+					<h5>My responsibility</h5>
+					<p>UX Design across 118 use cases</p>
+					<p>Collaborating with VUI Designer</p>
+					<p>Navigating technological constraints</p>
+				</div>
+
+				<div>
+					<h5>Duration</h5>
+					<p>3 weeks</p>
+				</div>
+
+				<div>
+					<h5>Company</h5>
+					<img class="logoimg" src="images/product_eapp/logo.png" alt="General Motors' logo"/>
+				</div>
+			</div>
+
+			<div>
+				<h3>Key features</h3>
+				<img class="fullwidthimg" src="images/product_littleo/0_features.png" alt="key features"/>
+			</div>
+			<div>
+				<h3>Staus</h3>
+				<img class="fullwidthimg" src="images/product_littleo/0_status.png" alt="key features"/>
+			</div>
+			<div class="container_computer_video">
+				<h3>Demo</h3>
+				<video src="videos/product_littleo/demo.mp4" controls></video>
+			</div>
+		</div>
+
+		<div id="significance" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>impact</h2>
+			</div>
+
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Securing a competitive advantage in the automotive industry</h3>
+					<p>The integration of the voice assistant within Buick vehicles and the OnStar mobile app is vital, as studies indicate over 60% of individuals who have utilized a voice assistant during their drive regard its availability as a significant factor in their purchasing decisions. This initiative is pivotal in sustaining Buick's competitive edge in the automotive market.</p>
+				</div>
+				<div>
+					<h3>Enhancing road safety for drivers</h3>
+					<p>Furthermore, this initiative transcends beyond just enhancing vehicular convenience—it significantly contributes to road safety. By reducing screen-based interactions within vehicles, we foresee a notable decline in digital distractions, contributing to 3.8% of crash injuries. (Lam) Hence, this development promises to redefine convenience and pledges a safer driving experience, marking a significant stride in reducing accident rates due to digital distractions.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="one" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>challenge 1</h2>
+			</div>
+
+			<div class="rightspacer"> <!-- details of this section -->
+				<div>
+					<h3>Crafting a comprehensive list of user scenarios</h3>
+					<p>Creating an extensive list of potential user paths proved to be a formidable challenge, particularly for use cases such as "Vehicle Condition Query". The challenge stemmed from the variability in data types across different car models.</p>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Method: secondary research</h3>
+						<p>I delved into General Motors' internal database to understand the diverse Buick car models and the respective data related to their condition. This deep dive facilitated an exhaustive analysis where I listed all potential situations a user might encounter during a vehicle condition check within the user flow. This thorough approach ensured that I accounted for every possible scenario, enhancing the user flow's robustness and reliability. Here is a glimpse into the diverse data types I worked with:</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_littleo/1_datalist.png" alt="the list of vehicle data"/>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Design with authorization limitations</h3>
+						<p>I collaborated with data engineers to validate the data's availability. However, this project imposed certain data-sharing restrictions. Consequently, we couldn't display precise figures of the vehicle's condition, necessitating the camouflage of some data.</p>
+					</div>
+					<div>
+						<h5>Iteration</h5>
+						<p>Upon identifying and listing all conceivable situations, I developed prototypes for each user path. Presented here is a snapshot of one such path: </p>
+						<img class="fullwidthimg" src="images/product_littleo/1_iteration.png" alt="before and after data camouflage"/>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Result</h3>
+						<h5>Example of the user case: vehicle condition query</h5>
+						<p>The majority of vehicle data queries are efficiently handled as one-turn dialogues. Here are a few exemplary user paths we devised:</p>
+						<img class="fullwidthimg" src="images/product_littleo/1_card.png" alt="voice card"/>
+					</div>
+					<div>
+						<h5>On the screen</h5>
+						<img class="fullwidthimg" src="images/product_littleo/1_ui.png" alt="voice and UI examples"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="two" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>challenge 2</h2>
+			</div>
+
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Optimizing user experience amidst technical constraints</h3>
+						<p>Initially, the vehicle remote control feature entailed a 3-minute long cybersecurity verification process, which adversely impacted the user experience, creating the impression of a stalled system.</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_littleo/2_oldflow.png" alt="problem of the new flow"/>
+				</div>
+				<div>
+					<h3>My initiative</h3>
+					<ol class="numberlist">
+						<li>
+							Recognizing the necessity for enhancement, I <span class="colorhighlight">spearheaded a meeting</span> with the lead engineer, product manager, and project manager to discuss the potential detrimental effects on the user experience. I showcased my findings from testing the pre-launch version, which highlighted the urgency for improvements. Consequently, the team committed to augmenting the feature's speed, successfully reducing the wait time to a more tolerable 1 minute.
+						</li>
+						<li>
+							Despite the reduction to 1 minute, I acknowledged that the duration might still hinder a seamless user experience. To counteract this, I integrated feedback and <span class="colorhighlight">feedforward mechanisms</span> within the user flow, fostering a more intuitive and streamlined process that aligns with user expectations.
+						</li>
+					</ol>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Iteration</h3>
+						<h5>Flowchart</h5>
+						<img class="fullwidthimg" src="images/product_littleo/2_newflow.png" alt="new flowchart"/>
+					</div>
+					<div>
+						<h5>On the screen</h5>
+						<img class="fullwidthimg" src="images/product_littleo/2_ui.png" alt="remote control UI example"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="three" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>challenge 3</h2>
+			</div>
+
+			<div class="rightspacer"> <!-- details of this section -->
+				<div class="secondspacer">
+					<div>
+						<h3>Boosting user awareness regarding voice assistant capabilities</h3>
+						<p>One factor inhibiting users from using voice technology is the limited knowledge of the full breadth of capabilities.</p>
+					</div>
+					<div class="quotes_bubble">
+						<img src="images/product_eapp/4_quote5.png" alt="Participant No.9" width="70"/>
+						<p class="quotes">The biggest hurdle for me has been awareness – understanding what I’m able to do with these devices.<br>— Female, 37  (PWC LLP)</p>
+					</div>
+					<div>
+						<h5>Design goal</h5>
+						<p>My focal objective was to elevate user comprehension concerning Little O's capabilities, fostering more widespread adoption.</p>
+					</div>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Design</h3>
+						<img class="fullwidthimg" src="images/product_littleo/3_ideas.png" alt="the ideas to boost user awareness of voice assistant"/>
+					</div>
+					<div>
+						<h5>Pros and cons</h5>
+						<p>Each strategy harbored its advantages and disadvantages but complemented each other harmoniously. I opted to integrate all of them to offer users multiple avenues to familiarize themselves with the voice assistant's capabilities.</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_littleo/3_proscons.png" alt="the pros and cons of the ideas"/>
+				</div>
+
+				<div class="secondspacer">
+					<div>
+						<h3>Validation</h3>
+						<p>To gauge the effectiveness of the implemented strategies, I asked my team to integrate event tracking within the flow of these three features. This allowed us to meticulously analyze the engagement levels and pinpoint the percentage of users who were actively interacting with each idea. </p>
+					</div>
+					<div>
+						<h5>Result</h5>
+						<p>The data revealed that Idea 1 – the prompt, garnered the highest user engagement, followed by the welcome page, which also demonstrated substantial effectiveness, as observed from the active user interactions with the tags to explore Little O's functionalities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="reflection" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>reflection</h2>
+			</div>
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Tight timeline </h3>
+					<p>The most formidable challenge encountered during this project was the stringent timeline. I conceptualized and executed 118 user cases within a 3-week timeframe, aligning seamlessly with the company's strategic objectives while ensuring project feasibility through adept coordination with the conversation designer, data scientist, and engineers.</p>
+				</div>
+				<div>
+					<h3>Next step</h3>
+					<p>Given the opportunity for further iteration, I aspire to conduct usability tests to ascertain the efficacy of the user flows and to enhance the voice assistant's desirability through improved user awareness and engagement, leveraging the welcome page, instructions, and prompts.</p>
+				</div>
+
+				<div>
+					<h3>Citation</h3>
+					<p>October 2002. ScienceDirect. https://www.sciencedirect.com/science/article/abs/pii/S0022437502000348.</p>
+					<p>PwC LLP. "Prepare for the voice revolution." 2018. PwC. https://www.pwc.com/us/en/services/consulting/library/consumer-intelligence-series/voice-assistants.html.</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>Coded and Designed by Eva Qinchi Chen &copy; 2023</p>
+	</footer>
+</body>
+</html>

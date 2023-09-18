@@ -107,6 +107,12 @@ p{
 .small{
 	font-size: 0.889rem;
 }
+.nda{
+	font-size: 0.8rem;
+	font-style: italic;
+	line-height: 1.1rem;
+	color:#80809d;
+}
 
 
 /*---------------------------------------------*/
@@ -335,7 +341,7 @@ footer nav ul li a:hover{
 	padding: 0.6rem 1rem 0.6rem 1rem;
 	border-radius: 0.667rem;
 	background-color: #f7f6ff;
-	inline-size: 6.44rem; /*set the tab length because it is an inline item*/
+	inline-size: 6.5rem; /*set the tab length because it is an inline item*/
 }
 
 /*intro text on white box*/
@@ -743,6 +749,11 @@ input[type=submit]:hover {
 .container_iphone_video video{
 	width: 100%;
 	max-width: 400px;
+	border-radius: 2rem;
+}
+.container_computer_video video{
+	width: 100%;
+	max-width: 1600px;
 	border-radius: 2rem;
 }
 

@@ -41,7 +41,7 @@
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul class="nav_links">
-				<li><a href = "docs/Resume_2C.pdf" title="eva chen resumé" download="" target="_blank">resumé</a></li>
+				<li><a href = "docs/Resume.pdf" title="eva chen resumé" target="_blank">resumé</a></li>
 				<li><a href = "about.html">about</a></li>
 				<li><a href = "index.html" >portfolio</a></li>
 			</ul>
@@ -88,65 +88,51 @@
 
 		</div>
 
-		<div id="problemsolution" class="fullwidth">
-			<div class="inner_bigright">
+		<div id="problemsolution" class="bigright">
 				<div> <!-- title of this section -->
 					<div class="sectionslash"></div>
-					<h2>problem & solution</h2>
+					<h2>Project brief</h2>
 				</div>
-				<div class="secondspacer">
+				<div class="rightspacer">
 					<div>
 						<h3>Business issue & project goal</h3>
-						<p>Only 20% of users have fully completed their profiles. Our goal is to inspire users to complete their profiles for more accurate job matching.</p>
+						<p>Only a mere <span class="colorhighlight">20%</span> of our users have completed their profiles. My mission was to cultivate a sense of inspiration among users, encouraging them to fill out their profiles comprehensively. This enhances job-matching precision, benefiting both users and employers.</p>
 					</div>
 					<div>
-						<h3>User problem identified from UX research</h3>
+						<h3>User problems identified from UX research</h3>
 						<p>1. A lack of guidance leaves users unsure of how to update their profiles.</p>
 						<p>2. The profile page's placement deep within the interface dissuades users from updating their profiles.</p>
 					</div>
+					<div class="secondspacer">
+						<div>
+							<h3>Solution</h3>
+							<p>To tackle these obstacles, I've introduced a new user flow that complements the original one, facilitating easier access for profile updates. This revamped system provides targeted guidance to users, advising them to update their profiles based on our big data analytics. Moreover, the inclusion of a strength indicator provides users with an evaluation of their profile's robustness, spurring them to make improvements.</p>
+						</div>
+						<div class="thirdspacer">
+							<h5>A Guided Profile Update Experience</h5>
+							<img class="shadowbox" src="images/product_indeed/11_prototype.png" alt="Final prototype."/>
+						</div>
+						<div class="thirdspacer">
+							<div>
+								<h5>Strength Indicator: Cohesive component for design system</h5>
+								<p>I introduced new strength indicator badges and icons, meticulously crafted to complement Indeed's established design system. This design upholds brand consistency and enriches the user interface with a refined, unified look. Crucially, these strength indicators serve as a focal point, captivating users' attention and actively motivating them to engage with the job guidance provided.</p>
+							</div>
+							<img class="shadowbox" src="images/product_indeed/11_indicator.png" alt="Strength indicator system."/>
+						</div>
+					</div>
 					<div>
-						<h3>Solution</h3>
-						<p>To tackle these obstacles, I've introduced a new user flow that complements the original one, facilitating easier access for profile updates. This revamped system provides targeted guidance to users, advising them to update their profiles based on our big data analytics. Moreover, the inclusion of a strength indicator provides users with an evaluation of their profile's robustness, spurring them to make improvements.</p>
+						<h3>Importance: Aligning with Indeed.com’s mission</h3>
+						<p>Our mission is “To help people get jobs.” Encouraging job seekers to complete and maintain their profiles enables Indeed's data system to provide better job matching, thereby fulfilling our mission.</p>
+						<br>
+						<img class="shadowbox" src="images/product_indeed/3_mission.jpeg" alt="Indeed's mission-themed T-shirt."/>
 					</div>
 				</div>
-			</div>
-
-			<div class="secondspacer">
-				<h5>User flowchart</h5>
-				<img class="fullwidthimg" src = "images/product_indeed/flowchart.png" alt="User flow diagram of the solution"/>
-			</div>
-
-			<div class="secondspacer">
-				<h5>Design (partial)</h5>
-				<div class="img_twocolumn">
-					<div class="container_iphone_video">
-						<video src="videos/product_indeed/final.mov" controls></video>
-					</div>
-					<div>
-						<img class="fullwidthimg" src="images/product_indeed/overview_indicator.png" alt="Design of the strength level indicator."/>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="significance" class="bigright">
-			<div> <!-- title of this section -->
-				<div class="sectionslash"></div>
-				<h2>significance</h2>
-			</div>
-
-			<div> <!-- details of this section -->
-				<h3>Aligning with Indeed.com’s mission</h3>
-				<p>Our mission is “To help people get jobs.” Encouraging job seekers to complete and maintain their profiles enables Indeed's data system to provide better job matching, thereby fulfilling our mission.</p>
-				<br>
-				<img class="shadowbox" src="images/product_indeed/3_mission.jpeg" alt="Indeed's mission-themed T-shirt."/>
-			</div>
 		</div>
 
 		<div id="research" class="bigright">
 			<div> <!-- title of this section -->
 				<div class="sectionslash"></div>
-				<h2>ux research</h2>
+				<h2>research one </h2>
 			</div>
 			<div class="rightspacer"> <!-- details of this section -->
 				<div class="secondspacer">
@@ -220,7 +206,10 @@
 					<img class="fullwidthimg" src="images/product_indeed/4_heuristic.png" alt="user flow to getting into the profile."/>
 				</div>
 				<div class="secondspacer">
-					<h3>Persona and user journey</h3>
+					<div>
+						<h3>User journey & persona</h3>
+						<p>Creating the user journey and persona was pivotal for two reasons. First, they synthesized research findings, guiding the establishment of our design direction. Second, they served as clear, documented references, facilitating effective communication throughout the design brainstorming sessions I led.  </p>
+					</div>
 					<div class="thirdspacer">
 						<h5>User journey</h5>
 						<img class="fullwidthimg" src="images/product_indeed/4_userjourney.png" alt="User journey."/>
@@ -230,29 +219,13 @@
 						<img class="shadowbox" src="images/product_indeed/4_persona.png" alt="Persona."/>
 					</div>
 				</div>
-				<div>
-					<h3>Summary: pain points</h3>
-					<p>I identified two main barriers that discourage users from updating their profiles:</p>
-					<ol class="numberlist">
-						<li><span class="colorhighlight">The lack of guidance</span> forces users to rely on external resources, slowing the profile updating process.</li>
-						<li>The deep placement of the profile page <span class="colorhighlight">prevents users from realizing the need for profile updates</span> during their job search.</li>
-					</ol>
+				<div class="thirdspacer">
+					<div>
+						<h3>Summary & Design direction</h3>
+						<p>From my research, I've pinpointed two critical user pain points. These insights have directly informed the two key design directions guiding this project.</p>
+					</div>
+					<img class="shadowbox" src="images/product_indeed/4_summary.png" alt="Pain Point 1: The lack of guidance forces users to rely on external resources, slowing the profile updating process. Direction 1: Offering guidance: Assisting users during the profile update process. Pain point 2: The deep placement of the profile page prevents users from realizing the need for profile updates during their job search. Direction 2: Providing notifications: Alerting users about the necessity of profile updates."/>
 				</div>
-			</div>
-		</div>
-
-		<div id="direction" class="bigright">
-			<div> <!-- title of this section -->
-				<div class="sectionslash"></div>
-				<h2>key design direction</h2>
-			</div>
-			<div> <!-- details of this section -->
-					<h3>Guiding and notifying users</h3>
-					<p>In light of the findings from the user experience research, the core direction for the design improvements centers on eliminating the barriers that users face when updating their profiles. The two key strategies to achieve this are:</p>
-					<ol class="numberlist">
-						<li><span class="colorhighlight">Offering guidance:</span> Assisting users during the profile update process.</li>
-						<li><span class="colorhighlight">Providing notifications:</span> Alerting users about the necessity of profile updates.</li>
-					</ol>
 			</div>
 		</div>
 
@@ -260,21 +233,22 @@
 		<div id="competitive" class="bigright">
 			<div> <!-- title of this section -->
 				<div class="sectionslash"></div>
-				<h2>competitive analysis</h2>
+				<h2>research two</h2>
 			</div>
 			<div class="rightspacer"> <!-- details of this section -->
 				<div class="secondspacer">
+					<h3>What has been done & What can be done better?</h3>
 					<div>
-						<h3>Investigating guidance strategies in the market</h3>
-						<p>To better understand the existing strategies for profile update guidance in the market, I conducted an analysis of 10 competitors:</p>
+						<h5>Methodology: Competitive analysis</h5>
+						<p>To better understand the existing strategies for profile update guidance in the market, I conducted an analysis of 10 competitors.</p>
 					</div>
 					<div class="twoevencolumn">
-							<div class="thirdspacer">
-								<h5>4 direct competitors</h5>
+							<div>
+								<p class="highlight">4 direct competitors</p>
 								<img class="fullwidthimg" src="images/product_indeed/6_competitor1.png" alt="4 direct competitors"/>
 							</div>
-							<div class="thirdspacer">
-								<h5>6 analogous competitors</h5>
+							<div>
+								<p class="highlight">6 analogous competitors</p>
 								<img class="fullwidthimg" src="images/product_indeed/6_competitor2.png" alt="6 analogous competitors"/>
 							</div>
 					</div>
@@ -330,14 +304,18 @@
 				<h2>ideation</h2>
 			</div>
 			<div class="rightspacer"> <!-- details of this section -->
-				<div>
-					<h3>Addressing pain point 1: absence of guidance for profile updates</h3>
-					<p>I explored several guidance options to aid users in updating their profiles. The most effective solution, as deemed by usability and understandability, was a number and level strength indicator.</p>
+				<div class="thirdspacer">
+					<div>
+						<h3>Addressing pain point 1: absence of guidance for profile updates</h3>
+						<p>I explored several guidance options to aid users in updating their profiles. The most effective solution, as deemed by usability and understandability, was a number and level strength indicator.</p>
+					</div>
 					<img class="fullwidthimg" src="images/product_indeed/7_ideation1.png" alt="Number and Level Strength Indicator was chosen over all other explored alternatives."/>
 				</div>
-				<div>
-					<h3>Addressing pain point 2: hidden profile page</h3>
-					<p>Despite constraints in adjusting the app's structure, various methods were proposed to prompt users to update their profiles. Notifications emerged as the most effective strategy, with internal data revealing a 40% user engagement rate.</p>
+				<div class="thirdspacer">
+					<div>
+						<h3>Addressing pain point 2: hidden profile page</h3>
+						<p>Despite constraints in adjusting the app's structure, various methods were proposed to prompt users to update their profiles. Notifications emerged as the most effective strategy, with internal data revealing a 40% user engagement rate.</p>
+					</div>
 					<img class="fullwidthimg" src="images/product_indeed/7_ideation2.png" alt="top performing prompt: system notification."/>
 				</div>
 			</div>
@@ -347,11 +325,11 @@
 		<div id="decision" class="bigright">
 			<div> <!-- title of this section -->
 				<div class="sectionslash"></div>
-				<h2>design choices</h2>
+				<h2>design drafts</h2>
 			</div>
 			<div class="rightspacer"> <!-- details of this section -->
 				<div>
-					<h3>Mid-fidelity prototypes and design choices</h3>
+					<h3>Concept test preparation</h3>
 					<p>The following two design solutions were further developed into mid-fidelity prototypes based on their capability to meet the user needs identified during the UX research.</p>
 				</div>
 				<div class="twoevencolumn">
@@ -387,10 +365,11 @@
 				</div>
 				<div class="secondspacer">
 					<div>
-						<h3>Data scientist team feedback</h3>
+						<h3>Feasibility assessment with data science team</h3>
 						<p>Our data scientist team validated the proposed designs, affirming their technical feasibility due to our ability to extract top qualifications for each job, a capability reinforced by their experience with similar projects.</p>
 					</div>
 					<img class="shadowbox" src="images/product_indeed/8_validate.png" alt="Eva discussing feasibility with data scientist."/>
+					<img class="fullwidthimg" src="images/product_indeed/flowchart.png" alt="flowchart of the design"/>
 				</div>
 			</div>
 		</div>
@@ -398,7 +377,7 @@
 		<div id="validation" class="bigright">
 			<div> <!-- title of this section -->
 				<div class="sectionslash"></div>
-				<h2>design validation</h2>
+				<h2>concept testing</h2>
 			</div>
 			<div class="rightspacer"> <!-- details of this section -->
 				<div class="secondspacer">
@@ -494,6 +473,10 @@
 				<div>
 					<h3>Broadening the scope to various occupations</h3>
 					<p>The present design, exemplified through a cashier role, needs expansion to cater to the broad spectrum of job roles. Coordinating with data scientists to understand occupation-specific data is essential to integrate diverse guidance categories into the design. For instance, a 'Certification' section, critical for professions like nursing, should be incorporated for comprehensive and efficient career guidance.</p>
+				</div>
+				<div>
+					<h3>Monitor success metrics</h3>
+					<p>Tracking Profile Completion Rates: Initially, only 20% of users completed their profiles. Our design aims to encourage users to provide more information. Post-launch, the increase in profile completion rates will serve as a key success indicator for the design's effectiveness.</p>
 				</div>
 				<div>
 					<h3>Addressing ethical concerns</h3>

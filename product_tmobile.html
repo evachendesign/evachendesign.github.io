@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/logo/monogram.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W05M0JV0N"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+ 	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-7W05M0JV0N');
+	</script>
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+	<title>T-Mobile account dashboard redesign</title>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!--<a class="skip" href="#main">Skip to Main Content</a>-->
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<a href="index.html"><img src="images/logo/logo.png" alt="Eva's logo" id="logo"></a>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul class="nav_links">
+				<li><a href = "docs/Resume.pdf" title="eva chen resumé" target="_blank">resumé</a></li>
+				<li><a href = "about.html">about</a></li>
+				<li><a href = "index.html" >portfolio</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main id="main">
+		<div id="overview" class="fullwidth">
+			<div class="overview_introtext">
+				<p class="companytype">T-Mobile</p>
+				<h2>Account dashboard redesign</h2>
+				<p class="large">The T-Mobile Account Dashboard is a central hub that empowers customers to manage their accounts efficiently. It encompasses essential features such as bill payments, device management, plan adjustments, and family line controls. Given its complexity and significance, the dashboard's information architecture is crucial for ensuring users can navigate and utilize these services effectively. The redesign aimed to enhance user self-service capabilities, thereby reducing reliance on customer support and contributing to operational cost savings.</p>
+				<p class="nda">(Please note, to comply with the non-disclosure agreement, all confidential information within this case study has been obscured. The views expressed here are solely my own and do not reflect the opinions of Indeed.com)</p>
+			</div>
+
+			<div class="info">
+				<div>
+					<h5>Team</h5>
+					<p>Lead product designer (me)</p>
+					<p>Product manager</p>
+					<p>Customer experience team</p>
+					<p>UX researcher</p>
+					<p>Content designer</p>
+					<p>Design system team</p>
+				</div>
+
+				<div>
+					<h5>My responsibility</h5>
+					<p>Led design process</p>
+					<p>Facilitated stakeholder alignment</p>
+				</div>
+
+				<div>
+					<h5>Duration</h5>
+					<p>3 Months</p>
+				</div>
+
+				<div>
+					<h5>Company</h5>
+					<img class="logoimg" src="images/product_tmobile/logo.png" alt="T-Mobile's logo"/>
+				</div>
+			</div>
+
+			<img class="shadowbox" src="images/product_tmobile/0_beforeafteraccount.png" alt="A comparison between before and after for the account page."/>
+
+		</div>
+
+		<div id="impact" class="bigright">
+				<div> <!-- title of this section -->
+					<div class="sectionslash"></div>
+					<h2>impact</h2>
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>#1 in app store</h3>
+						<p>Achieved the <span class="colorhighlight">#1 ranking</span> in the Lifestyle category in the app store. Before the redesign, the app was not ranked at all.</p>
+					</div>
+					<div>
+						<h3>23% fewer support calls</h3>
+						<p>Reduced customer care calls by <span class="colorhighlight">23%</span>, lowering operational costs.</p>
+					</div>
+					<div>
+						<h3>+2 in user satisfaction</h3>
+						<p>Closed the customer satisfaction gap by <span class="colorhighlight">2 points</span> (internal UX research metric), strengthening customer retention.</p>
+					</div>
+					
+				</div>
+		</div>
+
+		<div id="problem" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>define problems </h2>
+			</div>
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>From business challenge to UX problems</h3>
+					<p>I reframed a costly call-center issue into a UX challenge: redesigning the account dashboard to improve self-service and reduce support calls.</p>
+				</div>
+				<div>
+					<h5>Business challenge</h5>
+					<p>Customer support centers handle millions of calls every month, creating significant operational costs.</p>
+				</div>
+				<div>
+					<h5>Research insights</h5>
+					<ul class="points">
+						<li><span class="highlight">Customer experience team:</span> Over 30% of calls come from users asking for help with tasks that should be available via self-service online.</li>
+						<li><span class="highlight">UX research:</span> Both the website and app suffer from poor navigation and low information discoverability, preventing users from completing tasks independently.</li>
+					</ul>
+				</div>
+				<div>
+					<h5>Project scope</h5>
+					<p>Focus on redesigning the Account Dashboard, a critical entry point for users managing billing, usage, plans, and devices.</p>
+				</div>
+				<div>
+					<h5>Design goal</h5>
+					<p>Improve <span class="colorhighlight">information discovery and scannability</span> so users can quickly find features and self-serve online without contacting support.</p>
+				</div>
+				<div>
+					<h5>Success metric</h5>
+					<p>Target a 20% reduction in support calls related to account management.</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="process_ia" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>process 1</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<h2>Improving findability through data-driven information architecture redesign</h2>
+				<div>
+					<h3>Research methods</h3>
+					<p class="colorhighlight">Card sorting • Usability testing • Data analysis</p>
+				</div>
+				<div class="thirdspacer">
+					<h3>Part 1: Translating user mental models into business-ready information architecture</h3>
+					<div>
+						<h5>From card sorting to information architecture design</h5>
+						<p>After Product and I listed the features for Account Management, we partnered with UX Researchers to run card sorting. While the research revealed users' mental models for organizing account features, the final IA required adjustments to balance user expectations with operational constraints, here is why:</p>
+					</div>
+					<ul class="points">
+						<li><span class="highlight">Team ownership boundaries:</span> T-Mobile's organizational structure assigns specific features to dedicated teams (Usage, Payment, Account). The adjusted IA respects these boundaries while maintaining intuitive user pathways.</li>
+						<li><span class="highlight">Functional logic V.S. user perception:</span> Users categorized "Settings" independently, though functionally these features belong under Account management. We restructured to align with system architecture while preserving discoverability.</li>
+						<li><span class="highlight">Business promotion:</span> While users expected benefits/discounts exclusively in Shop (confirmed through tree testing), high customer dissatisfaction with findability demanded dual placement—maintaining Shop as primary while adding contextual entry points within Account features.</li>
+					</ul>
+					<img class="fullwidthimg" src="images/product_tmobile/1_categories.png" alt="A comparison between users' card sorting result and our information architecture draft."/>
+				</div>
+
+				<div class="secondspacer">
+					<h3>Part 2: Validation</h3>
+					<div>
+						<h5>Prototype for findability testing</h5>
+						<p>Based on synthesized card sorting results, business requirements, and data analysis, I developed the adjusted IA structure into a mid-fidelity prototype for findability testing.</p>
+						<img class="fullwidthimg" src="images/product_tmobile/1_test_prototype.png" alt="A mid-fidelity prototype created for findability testing."/>
+					</div>
+					<div>
+						<h5>Testing results & iterations</h5>
+						<p>Overall findability scored <span class="colorhighlight">6.2 out of 7</span>, a strong result. Based on insights, we made targeted refinements.</p>
+					</div>
+					<div>
+						<h5>Iteration 1 – Benefits visibility</h5>
+						<ul class="points">
+							<li><span class="highlight">Finding:</span> Users did not expect to find benefits under the Plan Details page and requested more upfront visibility.</li>
+							<li><span class="highlight">Iteration:</span> Despite Baymard’s caution against promotional clutter, I added a Benefits card on the Account page to improve discoverability while keeping the design lightweight.</li>
+						</ul>
+						<img class="fullwidthimg" src="images/product_tmobile/1_test_iteration1.png" alt="Iteration of my prototype: added benefit section under account page."/>
+					
+					</div>
+					<div>
+						<h5>Iteration 2 – Check if our customizations to the information architecture are acceptable to users?</h5>
+						<ul class="points">
+							<li><span class="highlight">Finding:</span> Users accepted Device and Settings under Account, but did not find Usage and Payment when moved to the top navigation. Many continued to look for them within Account. This issue was amplified on mobile, where the navigation bar is hidden behind a hamburger menu.</li>
+							<li><span class="highlight">Iteration:</span> I restored Bill and Usage to the Account and Device sections to align with user expectations and improve visibility across devices.</li>		
+						</ul>
+						<img class="fullwidthimg" src="images/product_tmobile/1_test_iteration2.png" alt="Iteration of my prototype: restored usage and billing the scope."/>
+					</div>
+				</div>
+				<div class="secondspacer">
+					<h3>Part 3: Data-driven information architecture design</h3>
+					<div class="thirdspacer">
+						<div>
+							<h5>Multi-source insight gathering</h5>
+							<p>To inform detailed IA decisions, I synthesized insights from three critical stakeholder groups:</p>
+							<ul class="points">
+								<li><span class="highlight">Customer experience team:</span> Analyzed recurring Customer Care call topics to identify navigation pain points.</li>
+								<li><span class="highlight">UX research:</span> Measured satisfaction gaps around feature findability through quantitative studies.</li>
+								<li><span class="highlight">Product analytics:</span> Examined traffic patterns and conversion metrics to refine the page hierarchy.</li>
+							</ul>
+							<p>The convergence of these data sources revealed overlapping problem areas, validating information priorities and ensuring alignment across teams.</p>
+						</div>
+						<img class="fullwidthimg" src="images/product_tmobile/2_data.png" alt="User activity data from three different stakeholders."/>
+					</div>
+					<div class="thirdspacer">
+						<div>
+							<h5>Data-based design decision examples </h5>
+							<p>By synthesizing data from multiple stakeholders, I identified key features that required improvement. The following examples illustrate design decisions directly driven by these insights:</p>
+						</div>
+						<div>
+							<p class="highlight">Account page</p>
+							<img class="fullwidthimg" src="images/product_tmobile/2_data_account.png" alt="Account dashboard page before and after."/>
+						</div>
+						<div>
+							<p class="highlight">Plan details page</p>
+							<img class="fullwidthimg" src="images/product_tmobile/2_data_plan.png" alt="Plan details page before and after."/>
+						</div>
+						<div>
+							<p class="highlight">Device details page</p>
+							<img class="fullwidthimg" src="images/product_tmobile/2_data_device.png" alt="Device details page before and after."/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="process_visual" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>process 2</h2>
+			</div>
+			<div class="rightspacer"> <!-- details of this section -->
+				<h2>Responsive web visual design</h2>
+				<div class="secondspacer">
+					<div>
+						<h3>Part 1: Mobile view first</h3>
+						<p>Why I pick mobile view design first and include it in the previous findability testing? Because:</p>
+						<ul class="points">
+							<li>Majority of the T-Mobile users use mobile. (>70%)</li>
+							<li>The natural of the account dashboard is a bank of portal and help people navigate to many features. The main thing I want to consider first is the information hierarchy. The mobile straight scrolling down nature, helped me avoid many noises, and focused on considering information hierarchy. </li>
+						</ul>
+						<p><span class="highlight">My visual design goal: </span><span class="colorhighlight">Scannability.</span> Help users find their task as quickly as possible.</p>
+					</div>
+					<div class="thirdspacer">
+						<div>
+							<h5>First exploration</h5>
+							<p>Visual exploration of three layouts for the account page: card, list, and tabbed. Card view was chosen for its superior scannability.</p>
+						</div>
+						<img class="fullwidthimg" src="images/product_tmobile/3_visual_wireframe.png" alt="Three wireframe options for mobile account page."/>
+					</div>
+					<div class="thirdspacer">
+						<div>
+							<h5>Fidelity evolution</h5>
+							<p>The mobile account dashboard progressed from low-fidelity sketches to mid-fidelity wireframes and finally to high-fidelity mockups.</p>
+						</div>
+						<img class="fullwidthimg" src="images/product_tmobile/3_visual_evolution.png" alt="A image shows how the visual design of account page evolve from wireframe to high fidelity design."/>
+					</div>
+				</div>
+
+				<div class="thirdspacer">
+					<div>
+						<h3>Part 2: From mobile to desktop</h3>
+						<p>My goal for desktop was efficiency. While mobile relies on vertical scrolling, desktop should leverage horizontal space for faster scanning. I used the device details page for early exploration because it is the most information-dense and the hardest to optimize for scanability. If this page worked, it could set the composition standard for the rest of the site. </p>
+						<br>
+						<p><span class="highlight">Two-column layout was selected</span> as the best balance of scanability and hierarchy.</p>
+					</div>
+					<img class="fullwidthimg" src="images/product_tmobile/3_visual_desktop.png" alt="A image shows explorations of desktop device details page."/>
+					
+				</div>
+				<div class="secondspacer">
+					<div>
+						<h3>Part 3: Edge cases and design quality assurance</h3>
+						<p>Before handoff, I conducted edge case and design quality assurance to ensure the account dashboard performs reliably under real-world conditions. </p>
+						<br>
+						<p>I validated how each card adapts to various data states—such as full, empty, loading, and error—while maintaining hierarchy, consistency, and visual balance across devices.</p>
+						<br>
+						<p>Working closely with engineers, I defined behavior rules and fallback logic for every card, testing for long text, high data volume, and missing data scenarios. This process confirmed that the design system remains scalable and resilient under all conditions.</p>
+					</div>
+					<div class="thirdspacer">
+						<h5>Edge case examples — device details page</h5>
+						<img class="fullwidthimg" src="images/product_tmobile/3_qa_edgecases.png" alt="A image shows edge cases in the device details page."/>
+					</div>
+					<div class="thirdspacer">
+						<div>
+							<h5>Feature-state mapping – device status card</h5>
+							<p>I collaborated with stakeholders to define all possible data types, variations, and status conditions across the account experience. The examples below show one component — the device status card — and how it adapts to different device types and service states.</p>
+						</div>
+						<img class="fullwidthimg" src="images/product_tmobile/3_qa_variations.png" alt="A image shows variations in the device status card."/>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div id="final" class="fullwidth">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>final showoff</h2>
+			</div>
+			<div class="thirdspacer">
+				<h5>Desktop view</h5>
+				<img class="fullwidthimg" src="images/product_tmobile/4_final_desktop.png" alt="Final desktop pages for account, device, and plan."/>
+			</div>
+			<div class="thirdspacer">
+				<h5>Mobile view</h5>
+				<img class="fullwidthimg" src="images/product_tmobile/4_final_mobile.png" alt="Final mobile pages for account, device, and plan."/>
+			</div>
+			<div class="thirdspacer">
+				<div>
+					<h5>Card component guidelines</h5>
+					<p class="overview_introtext">My account dashboard project raised the visibility of UX quality standards across the organization. The design introduced a new card-based pattern for grouping information, which later influenced multiple teams and became part of our official design system. I collaborated with the design system team to formalize the component, documenting its structure, usage, and accessibility guidelines.</p>
+				</div>
+				<img class="fullwidthimg" src="images/product_tmobile/4_final_guidelines.png" alt="Final guidelines about card component."/>
+			</div>
+
+		</div>
+
+	
+		<div id="reflection" class="bigright">
+			<div> <!-- title of this section -->
+				<div class="sectionslash"></div>
+				<h2>reflection</h2>
+			</div>
+			<div class="secondspacer"> <!-- details of this section -->
+				<div>
+					<h3>Executive alignment & stakeholder management</h3>
+					<p>Proactively led cross-functional workshops (UX research, Product Management, Customer Experience) for early alignment, securing executive support and smooth implementation.</p>
+				</div>
+				<div>
+					<h3>Cross-platform product strategy</h3>
+					<p>Extended successful web redesign to the mobile app, enhancing user experience consistency and market competitiveness, contributing to the app's top-ranking in Apple's App Store.</p>
+				</div>
+				<div>
+					<h3>Strategic growth and impact</h3>
+					<p>This project strengthened my strategic leadership capabilities, highlighting data-driven decisions, proactive stakeholder alignment, and market-oriented design for successful product delivery.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</main>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>Coded and Designed by Eva Qinchi Chen &copy; 2023</p>
+	</footer>
+</body>
+</html>
